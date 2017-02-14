@@ -1,0 +1,49 @@
+clase Alumno Qué tiene los siguientes atributos y métodos:
+Nombre
+Apellidos
+Edad
+Un constructor que inicialice dichos atributos.
+Los correspondientes getters
+Sobreescribe el método toString() para que retorno un String con el siguiente
+formato:
+APELLIDOS: apellidos alumno ::: NOMBRE: nombre alumno ::: EDAD: edad alumno
+
+
+clase Profesor Qué tiene los siguientes atributos y métodos:
+Nombre
+Primer apellido.
+Si es profesor es definitivo o sustituto.
+Un constructor que inicialice dichos atributos.
+Los correspondientes getters
+Sobreescribe el método toString() para que retorno un String con el siguiente
+formato:
+APELLIDO: apellido profesor ::: NOMBRE: nombre profesor ::: DEFINITIVO
+(true o false)
+
+
+clase Módulo Qué tiene los siguientes atributos y métodos:
+Nombre.
+Horas de duración.
+Un array para dos profesores que imparten el módulo.
+Una colección de alumnos (objetos)
+Un constructor que inicialice con el nombre y horas de duración como paráme-
+tros.
+Los correspondientes getters
+
+Un método que devuelva una colección de alumnos menores de edad.
+
+setters, uno para establecer a los alumnos matriculados y 
+otro para establecerlos profesores.
+
+Para el caso de profesores, dicho método debe añadir a dos
+profesores, por lo que los argumentos serán dos objetos de tipo Profesor.
+
+Sobreescribe el método toString() para que retorno un String con el siguiente
+formato:
+ALUMNOS:
+lista de alumnos
+PROFESORES:
+lista de profesores
+NOMBRE DEL MÓDULO
+nombre mdulo
+HORAS horas mdulo
