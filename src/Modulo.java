@@ -49,6 +49,22 @@ public class Modulo {
 	public String getNombre() {
 		return nombre;
 	}
+	
+	
+
+	/**
+	 * @param nombre el nombre a establecer
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	/**
+	 * @param horasDuracion el horasDuracion a establecer
+	 */
+	public void setHorasDuracion(int horasDuracion) {
+		this.horasDuracion = horasDuracion;
+	}
 
 	/**
 	 * @return the horasDuracion
@@ -60,36 +76,47 @@ public class Modulo {
 	/**
 	 * @return the listaProfesores
 	 */
-	public Profesor[] getListaProfesores() {
-		return listaProfesores;
+	public void getListaProfesores() {
+		System.out.println(listaProfesores[0]);
+		System.out.println(listaProfesores[1]);
+		return;
 	}
 
 	/**
 	 * @param listaProfesores
 	 *            the listaProfesores to set
 	 */
-	public void setListaProfesores(Profesor[] listaProfesores) {
-		this.listaProfesores = listaProfesores;
+	public void setListaProfesores(Profesor profesor1, Profesor profesor2) {
+		this.listaProfesores[0] = profesor1;
+		this.listaProfesores[1] = profesor2;
+		
 	}
 
 	/**
 	 * @param listaDeAlumnos
 	 *            the listaDeAlumnos to set
 	 */
-	public void setListaDeAlumnos(List<Alumno> listaDeAlumnos) {
-		this.listaDeAlumnos = listaDeAlumnos;
+	public void setListaDeAlumnos(Alumno alumno) {
+		this.listaDeAlumnos.add(alumno);
+	}
+	
+	/**
+	 * @return el listaDeAlumnos
+	 */
+	public void getListaDeAlumnos() {
+		for (Alumno alumno : listaDeAlumnos) 
+			System.out.println(alumno);
+		return;
 	}
 
-	public Alumno alumnosMenoresDeEdad(List<Alumno> ListaDeAlumnos) {
+	public void alumnosMenoresDeEdad() {
 
-		List<Alumno> menores = new ArrayList<Alumno>();
-
-		for (Alumno alumno : ListaDeAlumnos) {
-			if (alumno.getEdad() < 18)
-				menores.add(alumno);
+		for (Alumno alumno : listaDeAlumnos) {
+			if (alumno.getEdad() < 18) 
+				System.out.println(alumno);
 		}
-		return (Alumno) menores;
-	}
+		return ;
+	 }
 
 	/*
 	 * (non-Javadoc)
@@ -98,8 +125,8 @@ public class Modulo {
 	 */
 	@Override
 	public String toString() {
-		return "Modulo [nombre=" + "\n" + nombre + "\n" + ", horasDuracion=" + "\n" + horasDuracion + "\n"
-				+ ", listaProfesores=" + "\n" + Arrays.toString(listaProfesores) + "\n" + ", listaDeAlumnos=" + "\n"
+		return "Modulo nombre= " + nombre + "\n" + "horasDuracion= " + horasDuracion + "\n"
+				+ "listaProfesores=" + "\n" + Arrays.toString(listaProfesores) + "\n" + "listaDeAlumnos=" + "\n"
 				+ listaDeAlumnos + "]";
 	}
 
