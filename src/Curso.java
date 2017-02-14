@@ -74,7 +74,7 @@ public class Curso {
 		System.out.println("\nProfesores del modulo:");
 		modulo.getListaProfesores();
 		System.out.println("\nAlumnos Menores de edad:");
-		modulo.alumnosMenoresDeEdad();
+		modulo.getAlumnosMenoresDeEdad();
 		
 		// imprime la referencia del módulo
 		// imprime la lista de alumnos

@@ -109,12 +109,10 @@ public class Modulo {
 		return;
 	}
 
-	public void alumnosMenoresDeEdad() {
-
-		for (Alumno alumno : listaDeAlumnos) {
+	public void getAlumnosMenoresDeEdad() {
+		for (Alumno alumno : listaDeAlumnos) 
 			if (alumno.getEdad() < 18) 
 				System.out.println(alumno);
-		}
 		return ;
 	 }
 
