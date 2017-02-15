@@ -4,6 +4,7 @@ ass
 *.class
 >>>>>>> d66bd6d35ac73f635ca507eeb047ec1d3c52c126
 /bin/
+/examen/
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 *.zip
